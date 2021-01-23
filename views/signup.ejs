@@ -1,0 +1,70 @@
+<%- include('partials/header'); -%>
+
+<div class= "signup_container">
+  <div class="wrap">
+    <h2 class="signup_head">Create Your Account</h2>
+    <form>
+      <label for="first_name"></label> 
+      <input type="text" name= "full_name" placeholder="Full name">
+      <label for="last_name"></label> 
+      <input type="text" name= "organisation_name" placeholder="Organisation">
+      <label for="employe_id"></label> 
+      <input type="number" name= "employe_id" placeholder="Employe ID">
+      <div class="employe_id error"></div>
+      <label for="email"></label> 
+      <input type="text" name= "email" placeholder="email">
+      <div class="email error"></div>
+      <label for="password"></label> 
+      <input type="password" name= "password" placeholder="Password">
+      <div class="password error"></div>
+      <label for="mobile_no"></label> 
+      <input type="number" name= "mobile_no" placeholder="Mobile no.">
+      
+     
+      <button class="signup_btn" type="submit">sign up</button>
+      
+    </form>
+  </div>
+  </div>
+
+
+<script>
+    const form = document.querySelector('form');
+    const employeidError = document.querySelector('.employe_id.error');
+    const emailError = document.querySelector('.email.error');
+    const passwordError = document.querySelector('.password.error');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      // reset errors
+      employeidError.textContent = '';
+      emailError.textContent='';
+      passwordError.textContent = '';
+      // get values
+      const full_name = form.full_name.value;
+      const organisation_name = form.organisation_name.value;
+      const mobile_no = form.mobile_no.value;
+      const employe_id = form.employe_id.value;
+      const password = form.password.value;
+      const email = form.email.value;
+      try {
+        const res = await fetch('/signup', { 
+          method: 'POST', 
+          body: JSON.stringify({ full_name,organisation_name,mobile_no,employe_id, password, email }),
+          headers: {'Content-Type': 'application/json'}
+        });
+        const data = await res.json();
+        console.log(data);
+        if (data.errors) {
+          employeidError.textContent = data.errors.employe_id;
+          emailError.textContent= data.errors.email;
+          passwordError.textContent = data.errors.password;
+        }
+          else{
+          location.assign('/profile');
+        }
+      }
+      catch (err) {
+        console.log(err);
+      }
+    });
+  </script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cafeteria</title>
+    <link rel="icon" href="images/logo.png" >
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://checkout.stripe.com/checkout.js" defer></script>
+        <script>
+            var stripePublicKey = '<%= stripePublicKey %>'
+        </script>
+        <script src="cart.js" defer></script>
+    </head>
+  <body >
+    <header>
+      <nav>
+        <div class="first clearfix">
+          <img src="images/logo.png" class="logo">
+         <h4 class="logo_head">Cafeteria</h4>
+         <ul class="Navbar" id= "navbar">
+         
+          <% if(employe) { %>
+            <h1>Welcome <%= employe.full_name %></h1>
+            <li><a href = "/logout">Log Out</a></li>
+            <li><a href = "#cart">Cart</a></li>
+          <% }  else {%>   
+              <li><a href="/" class= "active"> Home</a></li>
+              <li><a href="#Menu1"> Menu</a></li>
+              <li><a href="/login"> Log in</a></li>
+              <li><a href="/signup"> Sign Up</a></li>
+              <li><a href="#cart">Cart</a></li>
+              <li><a href="#Aboutus_"> About Us</a></li>
+      
+          </ul>
+          <% } %>
+        </div>  
+       </nav>

@@ -1,0 +1,190 @@
+{
+      "Beverages" : [ 
+        {
+      "id":"1",
+      "name":"Americano",
+      "price":"150",
+      "imgName":"images/americano.jpg"
+    },
+    {
+       "id":"2",
+      "name":"Latte",
+      "price":"40",
+      "imgName":"images/latte.jpg"
+    },
+    {
+        "id":"3",
+      "name":"Cafe Mocha",
+      "price":"60",
+      "imgName":"images/cafe_mocha.jpg"
+    },
+    {
+        "id":"4",
+      "name":"Cappuccino",
+      "price":"70",
+      "imgName":"images/cappuccino.jpg"
+    },
+    {
+        "id":"5",
+      "name":"Macchiato",
+      "price":"80",
+      "imgName":"images/machiato.jpg"
+    },
+    {
+        "id":"6",
+      "name":"Chocolate shake",
+      "price":"100",
+      "imgName":"images/chocolate_shake.jpg"
+    },
+    {
+        "id":"7",
+      "name":"Lavender Mojito",
+      "price":"90",
+      "imgName":"images/lavender_mojito.jpeg"
+    },
+    {
+        "id":"8",
+      "name":"Masala Chass",
+      "price":"30",
+      "imgName":"images/masala_chass.jpeg"
+    },
+    {
+        "id":"9",
+      "name":"Gin Cucumber Cool",
+      "price":"60",
+      "imgName":"images/gin_cucumber_cooler.jpeg"
+    },
+    {
+        "id":"10",
+      "name":"Cranberry Vanilla",
+      "price":"60",
+      "imgName":"images/cranberry_vanilla.jpeg"
+    }
+  ],
+   "Snacks" :[
+    {
+        "id":"11",
+      "name":"Aloo Bonda",
+      "price":"40",
+      "imgName":"images/aloo_bonda.jpg"
+    },
+    {
+        "id":"12",
+      "name":"Burger",
+      "price":"80",
+      "imgName":"images/burger.jpg"
+    },
+    {
+        "id":"13",
+      "name":"Cheese Sandwich",
+      "price":"70",
+      "imgName":"images/cheese_sandwich.jpg"
+    },
+    {
+        "id":"14",
+      "name":"Cutlet",
+      "price":"30",
+      "imgName":"images/cutlet.jpg"
+    },
+    {
+      
+      "id":"15",
+      "name":"Dosa",
+      "price":"60",
+      "imgName":"images/dosa.jpg"
+    },
+    {
+        "id":"16",
+      "name":"Momos",
+      "price":"50",
+      "imgName":"images/momo.jpg"
+    },
+    {
+        "id":"17",
+      "name":"Mirchi Pakoda",
+      "price":"50",
+      "imgName":"images/mirchi_pakoda.jpg"
+    },
+    {
+        "id":"18",
+      "name":"Spring Rolls",
+      "price":"50",
+      "imgName":"images/spring_rolls.jpg"
+    },
+    {
+        "id":"19",
+      "name":"Masala Sandwich",
+      "price":"50",
+      "imgName":"images/sandwich.jpg"
+    },
+    {
+        "id":"20",
+      "name":"cutlets",
+      "price":"50",
+      "imgName":"images/tasty_cultet.jpg"
+    }
+  ],
+   "Dessert" :[
+     {
+        "_id":"21",
+        "name":"Fruits and Nuts Cake",
+        "price":"150",
+        "imgName":"images/cake.jpg"
+
+     },
+     {
+        "_id":"22",
+        "name":"Choco Banana Cake",
+        "price":"120",
+        "imgName":"images/Chocolate Banana Cake.jpg"
+     },
+     {
+        "_id":"23",
+        "name":"Lime coconut Donut",
+        "price":"70",
+        "imgName":"images/Key lime coconut donut.jpg"
+     },
+     {
+        "_id":"24",
+        "name":"Oreo Donut",
+        "price":"80",
+        "imgName":"images/Oreo Donut.jpg"
+     },
+     {
+        "_id":25,
+        "name":"Red Velvet Donut",
+        "price":"90",
+        "imgName":"images/Red Velvet Donuts.jpg"
+     },{
+        "_id":"26",
+        "name":"Cafe Mocha",
+        "price":"60",
+        "imgName":"images/coconut_lime.jpeg"
+     },
+     {
+        "_id":"27",
+        "name":"Lemon custard",
+        "price":"60",
+        "imgName":"images/lemon_custard.jpeg"
+     },
+     {
+        "_id":"28",
+        "name":"Mint Chocolate Chip",
+        "price":"60",
+        "imgName":"images/Mint_chocolate_chip.jpeg"
+     },
+     {
+        "_id":"29",
+        "name":"Strawberry Icecream",
+        "price":"60",
+        "imgName":"images/strawberry_icecream.jpeg"
+     },
+     {
+        "_id":"30",
+        "name":"Moose Tracks",
+        "price":"60",
+        "imgName":"images/moose_tracks.jpeg"
+     }
+    ]
+ 
+    }
